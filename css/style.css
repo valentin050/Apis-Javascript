@@ -1,1 +1,19 @@
-/* Add any custom CSS stylings you want here */
+/*Keep the page simple and readable*/
+body {
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+/*Keep the GIFs at the same height*/
+#gif-container img {
+    height: 180px;
+    object-fit: contain;
+}
+
+/*Use smaller images on phones*/
+@media (max-width: 576px) {
+    #gif-container img {
+        width: 50%;
+        height: 140px;
+    }
+}
